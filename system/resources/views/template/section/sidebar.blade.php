@@ -53,9 +53,10 @@
               </p>
             </a>
           </li>
+          </li>
           <li class="nav-item has-treeview">
             <a href="#" class="nav-link">
-              <i class="nav-icon fas fa-tachometer-alt"></i>
+              <i class="nav-icon fas fa-cog"></i>
               <p>
                 Pengaturan Akun
                 <i class="right fas fa-angle-left"></i>
@@ -64,13 +65,13 @@
             <ul class="nav nav-treeview">
               <li class="nav-item">
                 <a href="{{ url('/login') }}" class="nav-link {{checkRouteActive('login')}}">
-                  <i class="far fa-circle nav-icon"></i>
+                  <i class="far fa-edit nav-icon"></i>
                   <p>Login</p>
                 </a>
               </li>
               <li class="nav-item">
                 <a href="{{ url('/registrasi') }}" class="nav-link {{checkRouteActive('registrasi')}}">
-                  <i class="far fa-circle nav-icon"></i>
+                  <i class="far fa-edit nav-icon"></i>
                   <p>Registrasi</p>
                 </a>
               </li>

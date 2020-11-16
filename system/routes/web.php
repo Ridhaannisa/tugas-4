@@ -7,6 +7,7 @@ use App\Http\Controllers\ProdukController;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\KategoriController;
 use App\Http\Controllers\ClientProdukController;
+use App\Http\Controllers\UserController;
 
 /*
 |--------------------------------------------------------------------------
@@ -53,6 +54,7 @@ Route::get('/detail/{produk}', [ClientProdukController::class, 'show']);
 Route::get('pesanan/edit/{produk}', [ClientProdukController::class, 'edit']);
 Route::put('pesanan/{produk}', [ClientProdukController::class, 'update']);
 Route::delete('pesanan/{produk}', [ClientProdukController::class, 'destroy']);
+
 
 // Halaman Login
 Route::get('login', [AuthController::class, 'showLogin']);
