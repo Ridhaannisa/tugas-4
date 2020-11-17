@@ -66,6 +66,7 @@ Route::put('pesanan/{produk}', [ClientProdukController::class, 'update']);
 Route::delete('pesanan/{produk}', [ClientProdukController::class, 'destroy']);
 
 
+
 // Halaman Admin User
 Route::get('admin/user', [UserController::class, 'index']);
 Route::get('admin/user/create', [UserController::class, 'create']);
@@ -81,6 +82,8 @@ Route::delete('admin/user/{user}', [UserController::class, 'destroy']);
 Route::get('login', [AuthController::class, 'showLogin'])->name('login');
 Route::post('login', [AuthController::class, 'prosesLogin']);
 Route::get('logout', [AuthController::class, 'logout']);
+// Halaman Login
+Route::get('login', [AuthController::class, 'showLogin']);
 
 // Halaman Registrasi
 Route::get('registrasi', [AuthController::class, 'showRegistrasi']);
